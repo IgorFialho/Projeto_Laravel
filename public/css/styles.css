@@ -1,0 +1,140 @@
+.perfil{
+    width: 50px;
+    border-radius: 50%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+
+#welcome {
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #095366c5;
+    padding-bottom: 100px ;
+    position: relative;
+}
+
+header {
+    background-color: #095366c5;
+    border-bottom: 1px solid #ccc;
+}
+
+.msg{
+    background-color: #D4EDDA;
+    color: #0b4f69;
+    border: 1px solid #0dcf3d;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*CSS search-container*/
+
+#search-container{
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+}
+
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+/*CSS posts-container*/
+
+#posts-container h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#cards-container img{
+    border-radius: 2%;
+}
+
+#cards-conteiner {
+    flex-direction: column;
+    vertical-align: center;
+       
+}
+
+#cards-container .card{
+    max-width: 44%;
+    width:44%;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 30px;
+    
+}
+
+
+.column {
+  margin: 0;
+  display: grid;
+  grid-auto-flow: column-reverse;
+  align-items: center;
+  justify-items: center;
+}
+
+.card .card-date{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.61);
+}
+ 
+/*CSS rodape*/
+
+footer{
+    text-align: center;
+    background-color: #353E48;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+/* CSS pagina Publicar*/
+
+#post-create-container{
+    padding: 30px;
+}
+
+#post-create-container label{
+    font-weight: bold;
+}
+
+
+/* CSS dashboard  */
+
+.dashboard-publications-container  a{
+
+    color: black;
+}
