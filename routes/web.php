@@ -19,6 +19,8 @@ Route::get('/publicar', [EventoControle::class, 'post'])->middleware('auth');
 
 Route::post('/publicar', [EventoControle::class, 'store']);
 
+Route::post('/dashboard', [EventoControle::class, 'imgperfil']);
+
 Route::get('/dashboard', [EventoControle::class, 'dashboard'])->middleware('auth');
 
 Route::delete('/dashboard/{id}', [EventoControle::class, 'destroy']);

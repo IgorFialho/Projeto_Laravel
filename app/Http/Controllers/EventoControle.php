@@ -101,7 +101,6 @@ class EventoControle extends Controller
             $publicar->image = $imageName;
         }
 
-
         $user = auth()->user();
         $publicar->user_id = $user->id;
 
@@ -111,6 +110,33 @@ class EventoControle extends Controller
         return redirect('/publicacoes')->with('msg', 'Publicação realizada com sucesso !');
 
     }
+
+    
+    public function imgperfil(Request $request){
+
+        // Image Upload Perfil
+        $imgPerfil = new User;
+
+        if($request->hasFile('imagePerfil') && $request->file('imagePerfil')->isValid()) {
+
+            $requestImage = $request->imagePerfil;
+
+            $extension =  $requestImage->extension();
+
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+            $requestImage->move(public_path('img/imgPerfil'), $imageName);
+
+            $imgPerfil->imagePerfil = $imageName;
+        }
+
+        $user = auth()->user();
+        $imgPerfil->save();
+
+
+        return redirect('/dashboard')->with('msg', 'imagem de perfil atualizada com sucesso!');
+    }
+
 
 }
 

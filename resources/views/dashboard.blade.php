@@ -4,6 +4,22 @@
 
 @section('content')
 
+<div class="col-md-10 offset-md-1 dashboard-imgPerfil-container">
+
+    <form action="/dashboard" method="POST" enctype="multipart/form-data">
+      @csrf
+
+      <div class="form-group">
+         <label for="imagePerfil">Upload Image Perfil:</label>
+         <input type="file" class="form-control-file" id="imagePerfil" name="imagePerfil">
+      </div>
+    
+      <input type="submit" class="btn btn-primary" value="Salvar">
+    </form> 
+
+</div>    
+
+
 <div class="col-md-10 offset-md-1 dashboard-title-container">
     <h1>Minhas Publicações</h1>
 </div>

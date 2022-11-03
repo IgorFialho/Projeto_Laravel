@@ -27,11 +27,11 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
-           
+            @auth
                 <a href="/dashboard" class="navbar-brand">
-                    <img src="/img/perfil.png" class="perfil" alt="Foto perfil">
+                    <img src="/img/profile_photo_path" class="perfil" alt="Foto perfil">
                 </a>
-            
+            @endauth
                 <ul class="navbar-nav">
 
                     @guest
